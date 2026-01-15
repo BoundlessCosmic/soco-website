@@ -1,0 +1,7 @@
+# Force HTTPS
+http://so-co.io/* https://so-co.io/:splat 301
+http://www.so-co.io/* https://www.so-co.io/:splat 301
+
+# Short URLs for mobile
+/contact /contact-us 301
+/services /what-we-do 301
