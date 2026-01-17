@@ -1,0 +1,53 @@
+baseURL: "https://so-co.io"
+languageCode: "en-us"
+title: "Social & Company Marketing, LLC"
+theme: "ananke"
+
+minify:
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: true
+  removeComments: true
+  removeWhitespace: true
+  removeEmptyElements: false
+
+imaging:
+  quality: 85
+  anchor: smart
+  resampleFilter: linear
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: github
+    noClasses: true
+
+build:
+  writeStats: true
+
+purgeCSS:
+  enabled: true
+  whitelist:
+    - "btn"
+    - "btn-primary"
+    - "mobile-only"
+  whitelistPatterns:
+    - "^highlight"
+
+params:
+  navbarlogo:
+    image: /images/logo.svg
+    link: /
+  email: "hello@so-co.io"
+  phone: "+1-555-SOCO"
+  openGraph: true
+  twitterCard: true
+  schema: true
+  lazyLoad: true
+  responsiveImages: true
