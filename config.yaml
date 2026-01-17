@@ -53,8 +53,7 @@ params:
   navbarlogo:
     image: /images/logo.svg
     link: /
-  email: "
-  SOCO@so-co.io"
+  email: "soco@so-co.io"
   phone: "+1-985-791-7880"
   openGraph: true
   twitterCard: true
