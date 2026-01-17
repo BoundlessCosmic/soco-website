@@ -1,0 +1,63 @@
+baseURL: "https://so-co.io"
+languageCode: "en-us"
+title: "Social & Company Marketing"
+theme: "ananke"
+
+# 2026 PERFORMANCE SETTINGS (Updated for v0.153.4)
+minify:
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: true
+  removeComments: true
+  removeWhitespace: true
+  removeEmptyElements: false
+
+# IMAGE OPTIMIZATION (WebP support)
+imaging:
+  quality: 85
+  anchor: smart
+  resampleFilter: linear
+
+# MARKUP FOR SEO
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: github
+    noClasses: true
+
+# OUTPUT FORMATS
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+  section: ["HTML", "RSS"]
+
+# MOBILE OPTIMIZATIONS
+build:
+  writeStats: true  # Enables PurgeCSS automatically
+
+# PurgeCSS (removes unused CSS)
+purgeCSS:
+  enabled: true
+  whitelist:
+    - "btn"
+    - "btn-primary"
+    - "mobile-only"
+
+# 2026 MOBILE SETTINGS
+params:
+  navbarlogo:
+    image: /images/logo.svg
+    link: /
+  email: "
+  SOCO@so-co.io"
+  phone: "+1-985-791-7880"
+  openGraph: true
+  twitterCard: true
+  schema: true
+  lazyLoad: true
+  responsiveImages: true
