@@ -1,0 +1,12 @@
+baseURL = 'https://so-co.ai/'
+languageCode = 'en-us'
+title = 'Social & Company - AI-Power'
+theme = 'ananke'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+[params]
+  homepageSection = "ai"

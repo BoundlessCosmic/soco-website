@@ -1,0 +1,11 @@
+baseURL = 'https://so-co.io/'
+languageCode = 'en-us'
+title = 'Social & Company Marketing | Innovative Marketing & Growth Systems'
+description = 'Innovative marketing, growth systems, and AI-powered strategies for brands that refuse to be ignored.'
+themesDir = 'themes'
+theme = 'ananke'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

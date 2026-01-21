@@ -1,0 +1,27 @@
+{{ define "main" }}
+  {{ if in site.BaseURL "so-co.ai" }}
+    {{ with site.GetPage "section" "ai" }}
+      <main class="mw7 center ph3 pt4">
+        {{ .Content }}
+      </main>
+    {{ else }}
+      <main class="mw7 center ph3 pt4">
+        <p>AI section not found. Make sure <code>content/ai/_index.md</code> exists.</p>
+      </main>
+    {{ end }}
+  {{ else }}
+    <main class="mw7 center ph3 pt4">
+      {{/* .io homepage content (optional but recommended) */}}
+      {{ with .Site.GetPage "/" }}
+        {{ .Content }}
+      {{ end }}
+
+      <h2 class="mt4">Latest</h2>
+      <ul>
+        {{ range first 10 (where site.RegularPages "Section" "in" (slice "blog" "ai")) }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </main>
+  {{ end }}
+{{ end }}
