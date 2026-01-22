@@ -44,6 +44,7 @@ params:
   navbarlogo:
     image: /images/logo.svg
     link: /
+  formspreeAction: "https://formspree.io/f/xjgggejv"
   email: "hello@so-co.io"
   phone: "+1-555-SOCO"
   openGraph: true

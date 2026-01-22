@@ -22,7 +22,7 @@ Innovative marketing for brands that refuse to be ignored.
 Ready to grow your brand? Let's talk.
 
 <div id="contact">
-  <form action="https://formspree.io/f/xjgggejv" method="POST">
+  <form action="{{ site.Params.formspreeAction }}" method="POST">
     <input type="email" name="email" required placeholder="Your email">
     <input type="tel" name="phone" placeholder="Phone">
     <select name="service" required>
